@@ -91,7 +91,9 @@ def get_days_with_errors():
         errors = str(round(i[1]*100, 1)) + "%" + " errors"
         print(date + " -- " + errors)
 
-print('Calculating ...\n')
-get_top_articles()
-get_top_article_authors()
-get_days_with_errors()
+if __name__ == "__main__":
+    
+    print('Calculating ...\n')
+    get_top_articles()
+    get_top_article_authors()
+    get_days_with_errors()
