@@ -1,7 +1,7 @@
 # Log Analysis Project
 This is a project for Udacity's [Full Stack Web Developer Nanodegree](https://www.udacity.com/course/full-stack-web-developer-nanodegree--nd004)
 ## Project Description:
-Your task is to create a reporting tool that prints out reports (in plain text) 
+The task is to create an internal reporting tool that prints out reports 
 based on the data in the database. This reporting tool is a Python program 
 using the psycopg2 module to connect to the database.
 ### Questions to Answer:
@@ -15,7 +15,7 @@ Present this as a sorted list with the most popular author at the top.
 includes a column status that indicates the HTTP status code that the news site sent 
 to the user's browser. 
 
-## This Project Requires a Bit of Setup:
+## The Project Setup:
 This project is run in a virutal machine created using Vagrant so there are a few steps
 to get set up:
 #### Installing the dependencies and setting up the files:
@@ -35,13 +35,12 @@ These files configure the virtual machine and install all the tools needed to ru
 1. Once it is built, run ``` vagrant ssh ``` to connect.
 1. cd into the correct project directory: ``` cd /vagrant/log_analysis/log_analysis ```
 #### Load the data into the database:
-1. Load the data using the following command: ``` psql -d news -f newsdata.sql ```
-1. *Note:* Checkout Udacity's [FAQ](https://classroom.udacity.com/nanodegrees/nd004/parts/8d3e23e1-9ab6-47eb-b4f3-d5dc7ef27bf0/modules/bc51d967-cb21-46f4-90ea-caf73439dc59/lessons/262a84d7-86dc-487d-98f9-648aa7ca5a0f/concepts/a9cf98c8-0325-4c68-b972-58d5957f1a91) 
-page if you are running into any errors here.
+* Load the data using the following command: ``` psql -d news -f newsdata.sql ```
+
 
 
 ## Run The Project!
-1. You should already have vagrant up and be connected to it. 
+1. You should have vagrant up and be connected to it. 
 1. If you aren't already, cd into the correct project directory: ``` cd /vagrant/log_analysis ```
 1. Run ``` python log_analysis.py ```
 
