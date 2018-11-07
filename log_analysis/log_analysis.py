@@ -5,8 +5,6 @@ import psycopg2
 DBNAME = "news"
 
 def do_query(query):
-    """Connects to the database, runs the query passed to it,
-    and returns the results"""
     db = psycopg2.connect('dbname=' + DBNAME)
     c = db.cursor()
     c.execute(query)
@@ -30,12 +28,10 @@ def get_top_articles():
     results = do_query(query)
     # Print Results
     print('\nTOP THREE ARTICLES BY VIEWS:')
-    count = 1
     for i in results:
-        number = '(' + str(count) + ') "'
         title = i[0]
         views = '" with ' + str(i[1]) + " views"
-        print(number + title + views)
+        print(title + views)
         count += 1
 
 def get_top_article_authors():
@@ -56,10 +52,8 @@ def get_top_article_authors():
     results = do_query(query)
     # Print Results
     print('\nTOP THREE AUTHORS BY VIEWS:')
-    count = 1
     for i in results:
-        print('(' + str(count) + ') ' + i[0] + ' with ' + str(i[1]) + " views")
-        count += 1
+        print( i[0] + ' with ' + str(i[1]) + " views")
 
 def get_days_with_errors():
     """returns days with more than 1% errors"""
