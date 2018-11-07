@@ -49,12 +49,12 @@ These files configure the virtual machine and install all the tools needed to ru
 ## Expected Output: 
     Calculating Results...
     TOP THREE ARTICLES BY PAGE VIEWS:
-        (1) "Candidate is jerk, alleges rival" with 338647 views
-        (2) "Bears love berries, alleges bear" with 253801 views
-        (3) "Bad things gone, say good people" with 170098 views
+         "Candidate is jerk, alleges rival" with 338647 views
+         "Bears love berries, alleges bear" with 253801 views
+         "Bad things gone, say good people" with 170098 views
     TOP THREE AUTHORS BY VIEWS:
-        (1) Ursula La Multa with 507594 views
-        (2) Rudolf von Treppenwitz with 423457 views
-        (3) Anonymous Contributor with 170098 views
+         Ursula La Multa with 507594 views
+         Rudolf von Treppenwitz with 423457 views
+         Anonymous Contributor with 170098 views
     DAYS WITH MORE THAN 1% ERRORS:
         July 17, 2016 -- 2.3% errors
