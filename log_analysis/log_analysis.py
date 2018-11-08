@@ -60,7 +60,7 @@ def get_days_with_errors():
     # Build Query String
     query = """
         SELECT total.day,
-          ROUND(((errors.error_requests*1.0) / total.requests), 3) AS percent
+          ROUND(((errors.error_requests*1.0) / total.requests), 4) AS percent
         FROM (
           SELECT date_trunc('day', time) "day", count(*) AS error_requests
           FROM log
