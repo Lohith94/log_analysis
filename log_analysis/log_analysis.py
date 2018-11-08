@@ -73,7 +73,7 @@ def get_days_with_errors():
           GROUP BY day
           ) AS total
         ON total.day = errors.day
-        WHERE (ROUND(((errors.error_requests*1.0) / total.requests), 3) > 0.01)
+        WHERE (ROUND(((errors.error_requests*1.0) / total.requests), 4) > 0.01)
         ORDER BY percent DESC;
     """
     # Run Query
