@@ -32,7 +32,7 @@ def get_top_articles():
         title = i[0]
         views = '" with ' + str(i[1]) + " views"
         print(title + views)
-        count += 1
+   
 
 def get_top_article_authors():
     """returns top 3 most popular authors"""
