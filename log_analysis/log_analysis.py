@@ -13,6 +13,7 @@ def do_query(query):
     db.close()
     return rows
 
+
 def get_top_articles():
     """Returns top 3 most read articles"""
     # Build Query String
@@ -33,7 +34,8 @@ def get_top_articles():
         title = i[0]
         views = '" with ' + str(i[1]) + " views"
         print(title + views)
-   
+
+        
 def get_top_article_authors():
     """returns top 3 most popular authors"""
     # Build Query String
@@ -55,6 +57,7 @@ def get_top_article_authors():
     for i in results:
         print(i[0] + ' with ' + str(i[1]) + " views")
 
+        
 def get_days_with_errors():
     """returns days with more than 1% errors"""
     # Build Query String
@@ -87,7 +90,6 @@ def get_days_with_errors():
         
 
 if __name__ == "__main__":
-    
     print('Calculating ...\n')
     get_top_articles()
     get_top_article_authors()
